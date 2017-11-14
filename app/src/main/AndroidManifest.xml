@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.lql.kotlindemo">
+    package="com.example.lql.kotlindemo">
 
     <application
         android:allowBackup="true"
@@ -11,11 +11,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--集合部分-->
+        <activity android:name=".activity.MyListActivity1"></activity>
+
+        <!--函数部分-->
+        <activity android:name=".activity.FunctionActivity"></activity>
+
+        <!--recyclerview的页面-->
+        <activity android:name=".activity.RecyclerVeiwActivity"></activity>
     </application>
 
 </manifest>
