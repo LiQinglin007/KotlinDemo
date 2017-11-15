@@ -6,7 +6,7 @@ import com.example.lql.kotlindemo.R
 import com.example.lql.kotlindemo.utils.LogUtils
 
 /**
- * 类描述：
+ * 类描述：函数以及高阶函数
  * 作  者：dell or 李小米
  * 时  间：2017/11/14
  * 修改备注：
@@ -18,8 +18,53 @@ class FunctionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         init()
+        initAdvanced()
     }
 
+    //高阶函数
+    fun initAdvanced() {
+        /**
+         * 高阶函数：  1、参数或者返回这的类型是函数型
+         * 函数型：（参数）--》返回值
+         * lambda: 一种无名函数的简写{ （参数）--》函数执行语句}
+         * 其他语言称为闭包，即有能力访问其自身范围外的变量
+         */
+
+
+        //高阶函数：2 、描述任务的结果，而不是使用循环详细推算
+        //map：常用于对集合类型的元素类型整体元转
+        //其lambda中的参数的约定称为it
+
+        //想要把数字转化为汉字
+        val a = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+        val b = a.map { "第${it}" }
+
+        for (s in b) {
+            LogUtils.Loge("整数转换位字符串" + s)
+        }
+
+
+        //闭包
+        //filter:对集合类型进行筛选
+
+        //把偶数筛选出来
+        var sum = 0
+        val c = a.filter {
+            it % 2 == 0
+        }.forEach {
+            sum += it
+            LogUtils.Loge("闭包中的：" + sum)
+        }
+
+        //分组
+        val groupBy = a.groupBy { it % 2 == 0 }
+        LogUtils.Loge("groupBy" + groupBy)
+
+    }
+
+
+    //基本函数
     fun init() {
         /**
          * 调用一个方法
