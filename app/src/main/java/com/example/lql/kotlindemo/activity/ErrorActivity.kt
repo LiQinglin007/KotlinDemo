@@ -49,7 +49,7 @@ class ErrorActivity : AppCompatActivity() {
 
         //安全转换
         var e = c as? String
-        LogUtils.Loge("强制转换：" + e)
+        LogUtils.Loge("安全转换：" + e)
 
 
     }
