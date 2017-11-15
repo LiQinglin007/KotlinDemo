@@ -62,5 +62,12 @@
             android:layout_height="wrap_content"
             android:text="面向对象编程（类的继承、构造器）" />
 
+        <Button
+            android:id="@+id/buttonError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="异常处理" />
+
     </LinearLayout>
 </LinearLayout>
