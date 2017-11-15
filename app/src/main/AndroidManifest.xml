@@ -22,6 +22,8 @@
 
         <!--函数部分-->
         <activity android:name=".activity.FunctionActivity"></activity>
+        <!--控制流-->
+        <activity android:name=".activity.ForActivity"></activity>
 
         <!--recyclerview的页面-->
         <activity android:name=".activity.RecyclerVeiwActivity"></activity>

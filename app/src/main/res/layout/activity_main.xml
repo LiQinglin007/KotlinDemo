@@ -38,6 +38,13 @@
             android:layout_marginLeft="@dimen/px_15"
             android:text="函数" />
 
+        <Button
+            android:id="@+id/buttonFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="控制流" />
+
 
     </LinearLayout>
 

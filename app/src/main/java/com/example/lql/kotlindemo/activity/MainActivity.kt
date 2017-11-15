@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
             R.id.buttonList -> startActivity(Intent(this, MyListActivity1::class.java))
             R.id.buttonFunction -> startActivity(Intent(this, FunctionActivity::class.java))
+            R.id.buttonFor -> startActivity(Intent(this, ForActivity::class.java))
         }
     }
 
@@ -78,6 +79,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         buttonList.setOnClickListener(this)
         buttonFunction.setOnClickListener(this)
+        buttonFor.setOnClickListener(this)
+
 
         LogUtils.Loge("每天跑步${c}公里")
 
