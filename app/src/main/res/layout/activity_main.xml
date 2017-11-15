@@ -49,4 +49,18 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_15"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonObject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面向对象编程（类的继承、构造器）" />
+
+    </LinearLayout>
 </LinearLayout>

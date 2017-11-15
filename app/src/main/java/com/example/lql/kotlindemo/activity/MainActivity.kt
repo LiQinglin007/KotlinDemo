@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.buttonList -> startActivity(Intent(this, MyListActivity1::class.java))
             R.id.buttonFunction -> startActivity(Intent(this, FunctionActivity::class.java))
             R.id.buttonFor -> startActivity(Intent(this, ForActivity::class.java))
+            R.id.buttonObject -> startActivity(Intent(this, CodingToObjectActivity::class.java))
         }
     }
 
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonList.setOnClickListener(this)
         buttonFunction.setOnClickListener(this)
         buttonFor.setOnClickListener(this)
+        buttonObject.setOnClickListener(this)
 
 
         LogUtils.Loge("每天跑步${c}公里")

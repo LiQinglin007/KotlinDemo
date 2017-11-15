@@ -24,6 +24,8 @@
         <activity android:name=".activity.FunctionActivity"></activity>
         <!--控制流-->
         <activity android:name=".activity.ForActivity"></activity>
+        <!--面向对象编程、类的构造器和继承-->
+        <activity android:name=".activity.CodingToObjectActivity"></activity>
 
         <!--recyclerview的页面-->
         <activity android:name=".activity.RecyclerVeiwActivity"></activity>
