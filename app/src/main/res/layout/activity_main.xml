@@ -70,4 +70,31 @@
             android:text="异常处理" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接口" />
+
+        <Button
+            android:id="@+id/buttonGenerics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="泛型" />
+
+        <Button
+            android:id="@+id/buttonExtend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="扩展" />
+    </LinearLayout>
 </LinearLayout>

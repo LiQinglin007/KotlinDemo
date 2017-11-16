@@ -21,11 +21,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      */
     override fun onClick(v: View?) {
         when (v?.id) {
+        //集合
             R.id.buttonList -> startActivity(Intent(this, MyListActivity1::class.java))
+        //函数
             R.id.buttonFunction -> startActivity(Intent(this, FunctionActivity::class.java))
+        //控制流  for\while\when
             R.id.buttonFor -> startActivity(Intent(this, ForActivity::class.java))
+        //面向对象变编程
             R.id.buttonObject -> startActivity(Intent(this, CodingToObjectActivity::class.java))
+        //异常处理
             R.id.buttonError -> startActivity(Intent(this, ErrorActivity::class.java))
+        //接口
+            R.id.buttonInterface -> startActivity(Intent(this, InterfaceActivity::class.java))
+        //泛型
+            R.id.buttonGenerics -> startActivity(Intent(this, GenericsActivity::class.java))
+        //扩展
+            R.id.buttonExtend -> startActivity(Intent(this, ExtendActivity::class.java))
         }
     }
 
@@ -46,6 +57,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initView()
         c = 3       // 赋值
 
         /**
@@ -67,8 +79,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         LogUtils.Loge("${move3.first}向${move3.second}边移动了10步")
 
 
-
-        initView()
     }
 
     private fun initView() {
@@ -84,12 +94,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonFor.setOnClickListener(this)
         buttonObject.setOnClickListener(this)
         buttonError.setOnClickListener(this)
+        buttonInterface.setOnClickListener(this)
+        buttonGenerics.setOnClickListener(this)
+        buttonExtend.setOnClickListener(this)
 
 
         LogUtils.Loge("每天跑步${c}公里")
 
     }
-
 
 
 }

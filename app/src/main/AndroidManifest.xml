@@ -29,6 +29,13 @@
         <!--异常处理-->
         <activity android:name=".activity.ErrorActivity"></activity>
 
+        <!--接口-->
+        <activity android:name=".activity.InterfaceActivity"></activity>
+        <!--泛型-->
+        <activity android:name=".activity.GenericsActivity"></activity>
+        <!--扩展-->
+        <activity android:name=".activity.ExtendActivity"></activity>
+
         <!--recyclerview的页面-->
         <activity android:name=".activity.RecyclerVeiwActivity"></activity>
     </application>
