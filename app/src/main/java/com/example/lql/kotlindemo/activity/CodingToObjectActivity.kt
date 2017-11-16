@@ -17,7 +17,10 @@ class CodingToObjectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+        init()
+    }
 
+    private fun init() {
         var mBook1 = ShoppingBook("如何购物", 50)
         var mBook2 = FoodBook("吃东西", 20, "food")
         LogUtils.Loge(mBook1.toString())
@@ -51,9 +54,7 @@ class CodingToObjectActivity : AppCompatActivity() {
         //列举熟悉
         LogUtils.Loge("${mUser.component1()}${mUser.component2()}")
 
-
         LogUtils.Loge("枚举类：" + SexType.values().joinToString())
-
 
         val sizeOrdinal = Size.valueOf("M").ordinal
         val sizeName = Size.valueOf("M").name
@@ -72,9 +73,8 @@ class CodingToObjectActivity : AppCompatActivity() {
         LogUtils.Loge(baako.skin)
 
         //纯对象表达式：是临时用，无需继承任何类
-
         val temParking = object {
-            var x = 100;
+            var x = 100
         }
 
         //封装一个类
@@ -95,7 +95,6 @@ class CodingToObjectActivity : AppCompatActivity() {
         }
     }
 
-
     //对象声明
     object NetWorkRequestManager {
         fun register() {
@@ -103,14 +102,12 @@ class CodingToObjectActivity : AppCompatActivity() {
         }
     }
 
-
     /**
      * 对象表达式
      */
     open class Chinese(var name: String) {
         open var skin = "yellow"
     }
-
 
     /**
      * 定义一个书的实体
@@ -174,7 +171,6 @@ class CodingToObjectActivity : AppCompatActivity() {
 
 
     }
-
 
     /**
      * 类的继承

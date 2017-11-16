@@ -26,8 +26,8 @@ class MyListActivity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-//        initSet()
-//        initList()
+        initSet()
+        initList()
         initMap()
     }
 
@@ -194,7 +194,7 @@ class MyListActivity1 : AppCompatActivity() {
         //定义一个不可变的Set集合
         var mStringSet1: Set<String> = setOf("E", "F", "B", "C", "A", "D", "F", "B")
 
-        //定义一个可以边的Set集合
+        //定义一个可以变的Set集合
         var mStringSet2: Set<String> = mutableSetOf("E", "F", "B", "C", "A", "Z")
         //创建一个空的Set集合
         var mStringSet3: Set<String> = emptySet()
@@ -202,7 +202,7 @@ class MyListActivity1 : AppCompatActivity() {
         LogUtils.Loge("数量：" + mStringSet1.count())
         LogUtils.Loge("是否为空：" + mStringSet3.isEmpty())
         for (item in mStringSet1) {
-            LogUtils.Loge(item + "mStringSet1")
+            LogUtils.Loge(item + ">>>mStringSet1")
         }
         //是否包含某个元素
         LogUtils.Loge("判断是否包含某个元素：" + mStringSet1.contains("A"))

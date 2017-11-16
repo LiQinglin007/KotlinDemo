@@ -36,8 +36,6 @@ class ErrorActivity : AppCompatActivity() {
 
 
         //类型转换
-
-
         try {
             //强制转换
             var d = c as String
@@ -46,12 +44,9 @@ class ErrorActivity : AppCompatActivity() {
             LogUtils.Loge("强制转换报错了" + e.toString())
         }
 
-
         //安全转换
         var e = c as? String
         LogUtils.Loge("安全转换：" + e)
-
-
     }
 
     private fun init() {
@@ -70,7 +65,6 @@ class ErrorActivity : AppCompatActivity() {
         }
 
         LogUtils.Loge(a.toString())
-
     }
 
 

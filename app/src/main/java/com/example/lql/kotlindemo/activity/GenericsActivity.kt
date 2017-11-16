@@ -27,7 +27,7 @@ class GenericsActivity : AppCompatActivity() {
         showText(3)
         showText("123")
 
-
+        var stringList = arrayOf("1","2","3","4","5","6","7","9")
         //泛型约束
         //求和
         var sum = arrayOf(1, 2, 3, 4, 5, 6, 7, 10).sum()

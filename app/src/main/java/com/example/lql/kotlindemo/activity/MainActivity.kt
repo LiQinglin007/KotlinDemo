@@ -57,8 +57,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initView()
         c = 3       // 赋值
+        initView()
 
         /**
          * 元组   三元元组

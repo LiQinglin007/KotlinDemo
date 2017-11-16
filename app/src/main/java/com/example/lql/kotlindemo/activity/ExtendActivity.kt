@@ -26,7 +26,7 @@ class ExtendActivity : AppCompatActivity() {
      *
      * 扩展函数、扩展方法
      * 与接受者中参数、名称都一样的扩展是无效的
-     * 尽量避免与已有的名字崇明，如果一定要重名，参数名和类型也不要一样
+     * 尽量避免与已有的名字重明，如果一定要重名，参数名和类型也不要一样
      *
      *
      */
@@ -58,16 +58,9 @@ class ExtendActivity : AppCompatActivity() {
                   T : Comparable<T> {
 
         var biggest = this[0]
-//        for (t in this) {
-//            if (t > biggest) {
-//                biggest = t
-//            }
-//        }
-
-
-        for (i in 1..lastIndex) {
-            if (biggest < this[i]) {
-                biggest = this[i]
+        for (t in this) {
+            if (t > biggest) {
+                biggest = t
             }
         }
         return biggest

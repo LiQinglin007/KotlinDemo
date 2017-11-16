@@ -24,7 +24,7 @@ class FunctionActivity : AppCompatActivity() {
     //高阶函数
     fun initAdvanced() {
         /**
-         * 高阶函数：  1、参数或者返回这的类型是函数型
+         * 高阶函数：  1、参数或者返回值的类型是函数型
          * 函数型：（参数）--》返回值
          * lambda: 一种无名函数的简写{ （参数）--》函数执行语句}
          * 其他语言称为闭包，即有能力访问其自身范围外的变量
@@ -37,9 +37,7 @@ class FunctionActivity : AppCompatActivity() {
 
         //想要把数字转化为汉字
         val a = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-
         val b = a.map { "第${it}" }
-
         for (s in b) {
             LogUtils.Loge("整数转换位字符串" + s)
         }
@@ -47,8 +45,7 @@ class FunctionActivity : AppCompatActivity() {
 
         //闭包
         //filter:对集合类型进行筛选
-
-        //把偶数筛选出来
+        //把偶数筛选出来，然后求和
         var sum = 0
         val c = a.filter {
             it % 2 == 0
