@@ -37,6 +37,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.buttonGenerics -> startActivity(Intent(this, GenericsActivity::class.java))
         //扩展
             R.id.buttonExtend -> startActivity(Intent(this, ExtendActivity::class.java))
+        //recyclerview
+            R.id.buttonUiRecyclerview -> startActivity(Intent(this, RecyclerVeiwActivity::class.java))
         }
     }
 
@@ -97,6 +99,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonInterface.setOnClickListener(this)
         buttonGenerics.setOnClickListener(this)
         buttonExtend.setOnClickListener(this)
+
+
+
+        buttonUiRecyclerview.setOnClickListener(this)
 
 
         LogUtils.Loge("每天跑步${c}公里")
