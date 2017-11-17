@@ -1,13 +1,14 @@
 package com.example.lql.kotlindemo.activity
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.widget.Toast
 import com.example.lql.kotlindemo.R
 import com.example.lql.kotlindemo.adapter.TestAdapter
 import com.example.lql.kotlindemo.bean.TestBean
 import com.example.lql.kotlindemo.utils.RecyclerView.OnItemClickListener
-import com.example.lql.kotlindemo.utils.T
 import kotlinx.android.synthetic.main.activity_recyclerview.*
 
 
@@ -66,9 +67,13 @@ class RecyclerVeiwActivity : AppCompatActivity() {
         mRecyclerview.adapter = mTestAdapter
 
         mTestAdapter!!.setOnItemClickListener(OnItemClickListener { view, position ->
-            T.shortToast(this, "adapter的点击事件${position}")
+            this.ToastKotlin("adapter的点击事件${position}")
         })
     }
 
+
+    fun Context.ToastKotlin(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
 
 }

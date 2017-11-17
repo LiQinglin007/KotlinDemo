@@ -12,8 +12,8 @@ import com.example.lql.kotlindemo.bean.TestBean
 import com.example.lql.kotlindemo.utils.Glide.GlidePicUtils
 import com.example.lql.kotlindemo.utils.LogUtils
 import com.example.lql.kotlindemo.utils.RecyclerView.OnItemClickListener
-import com.example.lql.kotlindemo.utils.T
 import org.jetbrains.anko.find
+import org.jetbrains.anko.longToast
 
 
 /**
@@ -67,7 +67,7 @@ class TestAdapter(mContextView: Context) : RecyclerView.Adapter<TestAdapter.MyVi
      */
     inner class TextViewClick(private val index: Int) : View.OnClickListener {
         override fun onClick(v: View?) {
-            T.shortToast(mContext, "适配器里边：点击了第${index}个" + mList.get(index).nameStr)
+            mContext.longToast("适配器里边：点击了第${index}个" + mList.get(index).nameStr)
         }
     }
 
