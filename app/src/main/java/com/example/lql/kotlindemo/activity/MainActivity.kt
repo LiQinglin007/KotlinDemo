@@ -100,14 +100,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonGenerics.setOnClickListener(this)
         buttonExtend.setOnClickListener(this)
 
-
-
         buttonUiRecyclerview.setOnClickListener(this)
 
-
         LogUtils.Loge("每天跑步${c}公里")
-
     }
+
 
 
 }
