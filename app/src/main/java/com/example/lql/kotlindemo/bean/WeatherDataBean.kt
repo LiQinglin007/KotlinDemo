@@ -2,12 +2,14 @@ package com.example.lql.kotlindemo.bean
 import com.alibaba.fastjson.annotation.JSONField
 
 
+
 /**
  * 类描述：
  * 作  者：dell or 李小米
  * 时  间：2017/11/20
  * 修改备注：
  */
+
 data class WeatherDataBean(
 		@JSONField(name = "date") val date: String,
 		@JSONField(name = "message") val message: String,

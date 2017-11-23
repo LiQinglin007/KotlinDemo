@@ -42,6 +42,8 @@
 
         <!--recyclerview的页面-->
         <activity android:name=".activity.RecyclerVeiwActivity"></activity>
+        <!--获取网络数据-->
+        <activity android:name=".activity.GetDataActivity"></activity>
     </application>
 
 </manifest>

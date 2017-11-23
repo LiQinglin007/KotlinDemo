@@ -100,15 +100,22 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/buttonUiRecyclerview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="list页面" />
+
+        <Button
+            android:id="@+id/buttonGetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络请求" />
+
 
     </LinearLayout>
 
