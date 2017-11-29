@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.weatherwithkotlin.db.gen.CityBeanDao;
 import com.example.weatherwithkotlin.db.gen.DaoMaster;
+import com.example.weatherwithkotlin.db.gen.WeatherNowDataBeanDao;
 
 import org.greenrobot.greendao.database.Database;
 
@@ -31,6 +32,7 @@ public class DBOpenHelper extends DaoMaster.OpenHelper {
          */
         if (newVersion > oldVersion) {
             MigrationHelper.getInstance().migrate(db, CityBeanDao.class);
+            MigrationHelper.getInstance().migrate(db, WeatherNowDataBeanDao.class);
         }
     }
 }
