@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KotlinDemo.iml" filepath="$PROJECT_DIR$/KotlinDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" filepath="$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SweetalertLibrary/SweetalertLibrary.iml" filepath="$PROJECT_DIR$/SweetalertLibrary/SweetalertLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cityselector/cityselector.iml" filepath="$PROJECT_DIR$/cityselector/cityselector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weatherwithkotlin/weatherwithkotlin.iml" filepath="$PROJECT_DIR$/weatherwithkotlin/weatherwithkotlin.iml" />
     </modules>
   </component>
 </project>

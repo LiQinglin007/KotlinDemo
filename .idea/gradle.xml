@@ -8,7 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/LRecyclerview_library" />
+            <option value="$PROJECT_DIR$/SweetalertLibrary" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/cityselector" />
+            <option value="$PROJECT_DIR$/weatherwithkotlin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

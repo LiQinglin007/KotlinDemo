@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_200"
+    android:background="@color/window_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_15"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20">
+
+        <TextView
+            android:id="@+id/itemCityName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/px_32"
+            tools:text="武汉" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/itemWeatherImg"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="match_parent"
+                android:src="@drawable/day_rain0" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/itemCityTem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/px_32"
+            tools:text="8--20℃" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
