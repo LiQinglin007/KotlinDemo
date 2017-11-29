@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Demo\KotlinDemo\cityselector\src\main\assets"><file name="china_cities.db" path="D:\Demo\KotlinDemo\cityselector\src\main\assets\china_cities.db"/></source><source path="D:\Demo\KotlinDemo\cityselector\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\Demo\KotlinDemo\cityselector\src\debug\assets"/></dataSet></merger>
