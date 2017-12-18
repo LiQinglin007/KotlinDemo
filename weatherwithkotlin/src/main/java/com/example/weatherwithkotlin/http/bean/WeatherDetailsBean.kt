@@ -7,6 +7,7 @@ package com.example.weatherwithkotlin.http.bean
  * 最后修改：
  */
 
+
 data class WeatherDetailsBean(
 		val HeWeather6: List<HeWeather6Details>
 )

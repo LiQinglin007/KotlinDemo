@@ -1,9 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--城市名称-->
     <TextView
-        android:id="@+id/nameCityDataTv"
+        android:id="@+id/nameCityNameTv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_80"
+        android:gravity="center"
+        android:textSize="@dimen/px_50"
+        tools:text="石家庄" />
+
+
+    <!--现在天气状况-->
+    <TextView
+        android:id="@+id/weatherTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="晴天" />
+
+    <!--现在的温度-->
+    <TextView
+        android:id="@+id/templateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/px_80"
+        tools:text="11℃" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--今天天气-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10">
+
+
+                <TextView
+                    android:id="@+id/todayWeekTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    tools:text="星期一 今天" />
+
+
+                <TextView
+                    android:id="@+id/todayTem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/px_30"
+                    tools:text="23  12" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line"></include>
+
+            <!--明天的天气-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10">
+
+
+                <TextView
+                    android:id="@+id/tomorrowWeekTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    tools:text="星期一" />
+
+                <ImageView
+                    android:id="@+id/tomorrowImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tomorrowTem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/px_30"
+                    tools:text="23  12" />
+
+            </LinearLayout>
+
+            <!--后天的天气-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10">
+
+
+                <TextView
+                    android:id="@+id/afterTomorrowWeekTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    tools:text="星期一" />
+
+                <ImageView
+                    android:id="@+id/afterTomorrowImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/afterTomorrowTem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/px_30"
+                    tools:text="23  12" />
+
+            </LinearLayout>
+
+            <!--今天天气概括-->
+            <TextView
+                android:id="@+id/todayTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="今天：日间晴，最高温度9℃。夜间晴，最低温度-2℃。" />
+
+            <include layout="@layout/include_line"></include>
+            <!--穿衣提醒-->
+            <TextView
+                android:id="@+id/drsgTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="穿衣提醒：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--感冒指数-->
+            <TextView
+                android:id="@+id/fluTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="感冒指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--运动指数-->
+            <TextView
+                android:id="@+id/sportTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="运动指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--旅游指数-->
+            <TextView
+                android:id="@+id/travTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="旅游指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--洗车指数-->
+            <TextView
+                android:id="@+id/cwTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="洗车指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--舒适度指数-->
+            <TextView
+                android:id="@+id/comfTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="舒适度指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--紫外线指数-->
+            <TextView
+                android:id="@+id/uvTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="紫外线指数：" />
+
+            <include layout="@layout/include_line"></include>
+            <!--空气污染扩散条件指数-->
+            <TextView
+                android:id="@+id/airTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/px_20"
+                android:textSize="@dimen/px_30"
+                tools:text="空气污染扩散条件指数：" />
+
+            <include layout="@layout/include_line"></include>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
 </LinearLayout>

@@ -41,6 +41,7 @@ class GetWeatherDataPresenter(var mGetWeatherDataUI: GetWeatherDataUI) : IGetWea
 
     //批量查询
     override fun getData(city: ArrayList<CityBean>) {
+
         val view = getView()
         view.startLoadingView()
         var returnData = ArrayList<WeatherNowDataBean>()
@@ -113,12 +114,11 @@ class GetWeatherDataPresenter(var mGetWeatherDataUI: GetWeatherDataUI) : IGetWea
                                 }
                             }
                         })
-            }else{
+            } else {
                 if (cityBean.equals(city.last())) {
                     mCall.myCallBack()
                 }
             }
-
         }
     }
 
@@ -181,8 +181,6 @@ class GetWeatherDataPresenter(var mGetWeatherDataUI: GetWeatherDataUI) : IGetWea
                             view.setView(FinalData.OnError, null, e.toString())
                         }
                     })
-
-
         }
     }
 

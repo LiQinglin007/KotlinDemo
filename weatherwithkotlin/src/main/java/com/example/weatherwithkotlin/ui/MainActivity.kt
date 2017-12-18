@@ -21,7 +21,6 @@ import com.example.weatherwithkotlin.utils.SHA1Utils
 import com.github.jdsjlzx.recyclerview.LRecyclerViewAdapter
 import com.shiqkuangsan.cityselector.CitySelectorActivity
 import com.shiqkuangsan.cityselector.message.StringEventMessage
-import com.shiqkuangsan.cityselector.utils.ToastUtil
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -86,7 +85,6 @@ class MainActivity : BaseActivity(), AMapLocationListener, GetWeatherDataUI {
             var mIntnet = Intent(this, CityActivity::class.java)
             mIntnet.putExtra("cityname", mList.get(position).cityName)
             startActivity(mIntnet)
-            ToastUtil.showToast(this, mList.get(position).cityName)
         })
 
     }

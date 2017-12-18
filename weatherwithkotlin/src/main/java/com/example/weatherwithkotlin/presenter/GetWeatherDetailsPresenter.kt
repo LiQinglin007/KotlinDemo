@@ -21,6 +21,13 @@ class GetWeatherDetailsPresenter(var mCityActivityUI: CityActivityUI) : IGetWeat
     var instance: RetrofitApi? = null
     val baseUrl = "https://free-api.heweather.com/s6/"
     val key = "b2b3b3cc22ff486d9489a7c36f020afc"
+
+//    未来3-10天的天气情况
+//    https://free-api.heweather.com/s6/weather/forecast?parameters
+
+//逐小时天气
+//    https://free-api.heweather.com/s6/weather/hourly?parameters
+
     fun getView(): CityActivityUI {
         if (mView == null) {
             mView = mCityActivityUI
@@ -44,12 +51,12 @@ class GetWeatherDetailsPresenter(var mCityActivityUI: CityActivityUI) : IGetWeat
                 subscribe(object : RetrofitSubscriber<WeatherDetailsBean>() {
                     override fun onSuccess(response: WeatherDetailsBean?) {
                         view.stopLoadingView()
-                        view.setView(FinalData.OnSuccess,response,"")
+                        view.setView(FinalData.OnSuccess, response, "")
                     }
 
                     override fun onFailure(e: Throwable?) {
                         view.stopLoadingView()
-                        view.setView(FinalData.OnSuccess,null,e.toString())
+                        view.setView(FinalData.OnSuccess, null, e.toString())
                     }
                 })
     }
