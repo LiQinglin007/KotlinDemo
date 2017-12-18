@@ -24,7 +24,7 @@ import org.jetbrains.anko.longToast
  */
 
 //mList是TestAdapter的构造方法的入参
-class TestAdapter(mContextView: Context) : RecyclerView.Adapter<TestAdapter.MyViewHolder>() {
+class TestAdapter(var mContextView: Context) : RecyclerView.Adapter<TestAdapter.MyViewHolder>() {
 
     private var mContext = mContextView
     private var mList = ArrayList<TestBean>()
